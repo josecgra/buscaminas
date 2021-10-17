@@ -5,25 +5,25 @@ import java.util.*;
 
 // ################################################################################
 // Implementar el juego del BUSCAMINAS en lenguaje Java.
-// En el cÛdigo se dispone de las cabeceras de todas las funciones a desarrollar
-// y una breve explicaciÛn de lo que debe realizar.
-// Cada alumno programar· la/las funciÛn/es que le indique el profesor. El resto no las tocar·.  
-// La ˙nica funciÛn que ya est· hecha es la funciÛn main.
-// Cada alumno debe realizar unas pruebas mÌnimas de que su funciÛn es correcta.
+// En el c√≥digo se dispone de las cabeceras de todas las funciones a desarrollar
+// y una breve explicaci√≥n de lo que debe realizar.
+// Cada alumno programar√° la/las funci√≥n/es que le indique el profesor. El resto no las tocar√°.  
+// La √∫nica funci√≥n que ya est√° hecha es la funci√≥n main.
+// Cada alumno debe realizar unas pruebas m√≠nimas de que su funci√≥n es correcta.
 // ################################################################################
 
 public class Buscaminas {
 
 	// ################################################################################
-	// FunciÛn max: FunciÛn auxiliar que calcula el m·ximo de dos n˙meros
+	// Funci√≥n max: Funci√≥n auxiliar que calcula el m√°ximo de dos n√∫meros
 	// ################################################################################
 	public static int max(int num1, int num2) {
 		// por realizar
-		return 1;
+		return 3;
 	}
 
 	// ################################################################################
-	// FunciÛn min: FunciÛn auxiliar que calcula el mÌnimo de dos n˙meros
+	// Funci√≥n min: Funci√≥n auxiliar que calcula el m√≠nimo de dos n√∫meros
 	// ################################################################################
 	public static int min(int num1, int num2) {
 		// por realizar
@@ -31,17 +31,17 @@ public class Buscaminas {
 	}
 
 	// ################################################################################
-	// FunciÛn IncializarTablero: FunciÛn que recibe las dos talbas: tablero,
+	// Funci√≥n IncializarTablero: Funci√≥n que recibe las dos talbas: tablero,
 	// visible
 	// Incializa tablero con valores 0
-	// Incializa visible con valores Falso, indicando que est·n ocultas
+	// Incializa visible con valores Falso, indicando que est√°n ocultas
 	// ################################################################################
 	public static void inicializartablero(int tablero[][], boolean visible[][]) {
 		// por realizar
 	}
 
 	// ################################################################################
-	// FunciÛn PonerMinas: FunciÛn que recibe el tablero (tabla 10x10) por
+	// Funci√≥n PonerMinas: Funci√≥n que recibe el tablero (tabla 10x10) por
 	// referencia
 	// Genera 10 posiciones de la tabla e incializa esas posiciones con minas (valor
 	// 9)
@@ -55,21 +55,21 @@ public class Buscaminas {
 	}
 
 	// ################################################################################
-	// FunciÛn DestaparCelda: Funcion que recibe por referencia las dos tablas y la
+	// Funci√≥n DestaparCelda: Funcion que recibe por referencia las dos tablas y la
 	// fila y columna que se debe destapar.
-	// Si es una casilla que se puede destapar (la posiciÛn de la tabla visible es
+	// Si es una casilla que se puede destapar (la posici√≥n de la tabla visible es
 	// Falso)
-	// Se destapa (posiciÛn de la tabla visible a Verdadero)
+	// Se destapa (posici√≥n de la tabla visible a Verdadero)
 	// Si no hay minas cerca tengo que intentar destapar las vecinas
 	// Si la celda vecina no es una mina, la destapo
-	// FunciÛn recursiva
+	// Funci√≥n recursiva
 	// ################################################################################
 	public static void destaparcelda(int tablero[][], boolean visible[][], int fila, int colum) {
 		// por realizar
 	}
 
 	// ################################################################################
-	// FunciÛn ContarCeldasDestapadas: Funcion que recibe la tabla visible
+	// Funci√≥n ContarCeldasDestapadas: Funcion que recibe la tabla visible
 	// Recorre la tabla y cuenta los valores Verdaderos, este valor se devuelve
 	// Si el contador es 90 significa que hemos destapado todas las casillas: hemos
 	// ganado
@@ -80,10 +80,10 @@ public class Buscaminas {
 	}
 
 	// ################################################################################
-	// FunciÛn ComprobarTablero: Funcion que recibe por referencia las dos tablas y
+	// Funci√≥n ComprobarTablero: Funcion que recibe por referencia las dos tablas y
 	// la
 	// fila y columna que se debe destapar.
-	// Si la posiciÛn a destapar es una mina (=9) devuelve -1 (hemos perdido)
+	// Si la posici√≥n a destapar es una mina (=9) devuelve -1 (hemos perdido)
 	// SiNo destapo la casilla correspondiente y cuento las casillas detapadas y se
 	// devuelve
 	// ################################################################################
@@ -93,16 +93,16 @@ public class Buscaminas {
 	}
 
 	// ################################################################################
-	// FunciÛn EscribirTablero: Funcion que las dos tablas
+	// Funci√≥n EscribirTablero: Funcion que las dos tablas
 	// Recorre las tablas y las muestras en pantalla
-	// Dependiendo del valor de cada posiciÛn de la tabla visible, muestra la
-	// posiciÛn
+	// Dependiendo del valor de cada posici√≥n de la tabla visible, muestra la
+	// posici√≥n
 	// de la tabla resultado.
-	// Si la posiciÛn est· destapada (verdadero):
+	// Si la posici√≥n est√° destapada (verdadero):
 	// Si no tiene minas alrededor (valor 0) muestra un hueco
 	// Si es una mina, muestro un *
 	// SiNo muetro el valor de la casilla (indica cuantas minas tiene alrededor)
-	// SiNo la posiciÛn no es visible y muestro un #
+	// SiNo la posici√≥n no es visible y muestro un #
 	// ################################################################################
 	public static void escribirtablero(int tablero[][], boolean visible[][]) {
 		// por realizar
